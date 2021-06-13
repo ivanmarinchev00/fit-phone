@@ -6,13 +6,240 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="326dp"
+        android:layout_height="174dp"
+        app:layout_constraintBottom_toTopOf="@+id/challenge_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/profileimg"
+        android:layout_width="67dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginRight="300dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/challenge_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@drawable/profile" />
+
     <TextView
+        android:id="@+id/username"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/cantarell"
+        android:text="Lara Croft"
+        android:textColor="#00B7EE"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/challenge_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profileimg"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/challenge_btn"
+        android:layout_width="352dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/wisdom_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@drawable/challenge_btn" />
+
+    <ImageView
+        android:id="@+id/wisdom_btn"
+        android:layout_width="352dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/chonicle_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/challenge_btn"
+        app:srcCompat="@drawable/wisdom_btn" />
+
+    <ImageView
+        android:id="@+id/home_btn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/challenge_bottom_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/house2" />
+
+    <ImageView
+        android:id="@+id/challenge_bottom_btn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ink_bottom_btn"
+        app:layout_constraintStart_toEndOf="@+id/home_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/swords" />
+
+    <ImageView
+        android:id="@+id/wisdom_bottom_btn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_bottom_btn"
+        app:layout_constraintStart_toEndOf="@+id/ink_bottom_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wisdom" />
+
+    <ImageView
+        android:id="@+id/profile_bottom_btn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wisdom_bottom_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/scorebox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginRight="235dp"
+        android:layout_marginBottom="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score_txt"
+        app:srcCompat="@drawable/score" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="46dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/cantarell"
+        android:text="15"
+        android:textColor="#00B7EE"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/scorebox"
+        app:layout_constraintEnd_toEndOf="@+id/scorebox"
+        app:layout_constraintStart_toStartOf="@+id/scorebox"
+        app:layout_constraintTop_toTopOf="@+id/scorebox" />
+
+    <TextView
+        android:id="@+id/score_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:fontFamily="@font/cantarell"
+        android:text="SCORE"
+        android:textColor="#00B7EE"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/scorebox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chonicle_btn" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="181dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="75dp"
+        android:fontFamily="@font/cantarell"
+        android:gravity="right
+"
+        android:text="“The greatest amount of wasted time is the time not getting started”                  Dawson Trotman"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scorebox"
+        app:layout_constraintTop_toBottomOf="@+id/chonicle_btn" />
+
+    <ImageView
+        android:id="@+id/chonicle_btn"
+        android:layout_width="352dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/score_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wisdom_btn"
+        app:srcCompat="@drawable/chronicle_btn" />
+
+    <ImageView
+        android:id="@+id/ink_bottom_btn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wisdom_bottom_btn"
+        app:layout_constraintStart_toEndOf="@+id/challenge_bottom_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ink" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
