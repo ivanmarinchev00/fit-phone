@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "714280453276",
+    "project_id": "fitphone-40b40",
+    "storage_bucket": "fitphone-40b40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714280453276:android:1941876c21043462a3d959",
+        "android_client_info": {
+          "package_name": "com.example.fitphone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714280453276-flmjq9o5kcoaaetbh9evsj5dbgp8ea7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwYL6xN2dGRjE5iADGxs577wQwlWpmz2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714280453276-flmjq9o5kcoaaetbh9evsj5dbgp8ea7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

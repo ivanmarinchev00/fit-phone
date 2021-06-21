@@ -5,149 +5,167 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TopicArticlesActivity"
-    android:background="@drawable/rounded_corner">
+    android:background="@drawable/rounded_corner_w">
 
-
-    <TextView
-        android:id="@+id/textView4"
+    <ImageView
+        android:id="@+id/chronicle_article_category_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wisdom"
-        android:textColor="@color/blue"
-        android:textSize="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView11"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintEnd_toStartOf="@+id/wisdom_article_category_btn"
+        app:layout_constraintStart_toEndOf="@+id/challenge_article_category_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ink" />
+
+    <ImageView
+        android:id="@+id/home_article_category_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/challenge_article_category_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179" />
+        app:srcCompat="@drawable/house" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/wisdom_article_category_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="132dp"
-        android:layout_marginRight="132dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_article_category_btn"
+        app:layout_constraintStart_toEndOf="@+id/chronicle_article_category_btn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17"
-        app:srcCompat="@drawable/wisdom" />
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="380dp"
-        android:layout_height="600dp"
-        android:layout_marginBottom="148dp"
-        android:background="@drawable/topic_box"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent">
-
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="58dp"
-            android:layout_marginRight="58dp"
-            android:layout_marginBottom="486dp"
-            android:layout_weight="1"
-            android:text="Choose a topic:"
-            android:textColor="@color/white"
-            android:textSize="40dp" />
-
-        <Button
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="44dp"
-            android:layout_marginRight="44dp"
-            android:layout_marginBottom="354dp"
-            android:background="@drawable/topic_button"
-            android:text="Sleep"
-            android:textColor="@color/blue"
-            android:textSize="30dp" />
-
-        <Button
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="46dp"
-            android:layout_marginRight="46dp"
-            android:layout_marginBottom="233dp"
-            android:background="@drawable/topic_button"
-            android:text="Procrastination"
-            android:textColor="@color/blue"
-            android:textSize="30dp" />
-
-        <Button
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="42dp"
-            android:layout_marginRight="42dp"
-            android:layout_marginBottom="109dp"
-            android:background="@drawable/topic_button"
-            android:text="Life"
-            android:textColor="@color/blue"
-            android:textSize="30dp" />
-    </RelativeLayout>
+        app:srcCompat="@drawable/wisdom_b" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/challenge_article_category_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chronicle_article_category_btn"
+        app:layout_constraintStart_toEndOf="@+id/home_article_category_btn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97"
-        app:srcCompat="@drawable/house"
-        tools:layout_editor_absoluteX="41dp" />
+        app:srcCompat="@drawable/swords_b" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/profile_article_category_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@+id/imageView14"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toEndOf="@+id/imageView12"
-        app:srcCompat="@drawable/swords"
-        tools:layout_editor_absoluteY="955dp" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/wisdom"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="955dp" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@+id/imageView16"
-        app:layout_constraintStart_toEndOf="@+id/imageView14"
-        app:srcCompat="@drawable/ink"
-        tools:layout_editor_absoluteY="954dp" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="66dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/profile"
-        tools:layout_editor_absoluteY="955dp" />
+        app:layout_constraintStart_toEndOf="@+id/wisdom_article_category_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/article_category_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/cantarell"
+        android:text="SLEEP"
+        android:textColor="#00B7EE"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/article_1_btn"
+        app:layout_constraintEnd_toStartOf="@+id/article_category_icon_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/article_category_icon_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/article_1_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/article_category_title_txt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/slumber" />
+
+    <Button
+        android:id="@+id/article_1_btn"
+        android:layout_width="379dp"
+        android:layout_height="113dp"
+        android:background="@drawable/rounded_corner_b"
+        android:fontFamily="@font/cantarell"
+        android:text="How much should you sleep? "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/article_2_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_category_title_txt" />
+
+    <Button
+        android:id="@+id/article_2_btn"
+        android:layout_width="379dp"
+        android:layout_height="113dp"
+        android:background="@drawable/rounded_corner_b"
+        android:fontFamily="@font/cantarell"
+        android:text="How you can improve your sleep quality"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/article_3_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_1_btn" />
+
+    <Button
+        android:id="@+id/article_3_btn"
+        android:layout_width="379dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rounded_corner_b"
+        android:fontFamily="@font/cantarell"
+        android:text="Sleep deprivation affects on your health and daily life"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/chronicle_article_category_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_2_btn" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

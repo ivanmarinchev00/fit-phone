@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="382dp"
+        android:layout_height="549dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_menu"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_chronicle_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chronicle_title">
+
+        <ImageView
+            android:id="@+id/chronicle_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/chronicles_complete_btn"
+            app:layout_constraintEnd_toStartOf="@+id/chronicle_entry_points_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meh_emoji_btn"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/chronicle_entry_points_txt"
+            android:layout_width="161dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/cantarell"
+            android:gravity="left"
+            android:text="5 Points"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/chronicles_complete_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chronicle_star"
+            app:layout_constraintTop_toBottomOf="@+id/meh_emoji_btn" />
+
+        <TextView
+            android:id="@+id/chronicle_question"
+            android:layout_width="306dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/cantarell"
+            android:text="HOW ARE YOU TODAY?"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/chronicle_guide_questions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chronicle_evaluation"
+            android:layout_width="305dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/cantarell"
+            android:text="EVALUATE YOUR DAY :"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/meh_emoji_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chronicle_entry_inp" />
+
+        <TextView
+            android:id="@+id/chronicle_guide_questions"
+            android:layout_width="319dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/cantarell"
+            android:text="How did you sleep?How many times have you been distracted by your phone? Why? Was it more important  than what you were doing at a time?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/chronicle_entry_inp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chronicle_question" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/chronicle_entry_inp"
+            android:layout_width="330dp"
+            android:layout_height="175dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/cantarell"
+            android:gravity="top"
+            android:hint="Write here..."
+            app:layout_constraintBottom_toTopOf="@+id/chronicle_evaluation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chronicle_guide_questions" />
+
+        <ImageView
+            android:id="@+id/happy_emoji_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/chronicle_entry_points_txt"
+            app:layout_constraintEnd_toStartOf="@+id/meh_emoji_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chronicle_evaluation"
+            app:srcCompat="@drawable/smile" />
+
+        <ImageView
+            android:id="@+id/meh_emoji_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/chronicle_entry_points_txt"
+            app:layout_constraintEnd_toStartOf="@+id/sad_emoji_btn"
+            app:layout_constraintStart_toEndOf="@+id/happy_emoji_btn"
+            app:layout_constraintTop_toBottomOf="@+id/chronicle_evaluation"
+            app:srcCompat="@drawable/meh" />
+
+        <ImageView
+            android:id="@+id/sad_emoji_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/chronicle_entry_points_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/meh_emoji_btn"
+            app:layout_constraintTop_toBottomOf="@+id/chronicle_evaluation"
+            app:srcCompat="@drawable/sad" />
+
+        <ImageView
+            android:id="@+id/chronicles_complete_btn"
+            android:layout_width="303dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chronicle_entry_points_txt"
+            app:srcCompat="@drawable/complete_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/chronicle_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/cantarell"
+        android:text="Chronicle"
+        android:textColor="#00B7EE"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/chronicleicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_chronicle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/challenges_chronicle_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/house" />
+
+    <ImageView
+        android:id="@+id/challenges_chronicle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chronicle_chronicle_btn"
+        app:layout_constraintStart_toEndOf="@+id/home_chronicle_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/swords_b" />
+
+    <ImageView
+        android:id="@+id/chronicle_chronicle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wisdom_chronicle_btn"
+        app:layout_constraintStart_toEndOf="@+id/challenges_chronicle_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ink" />
+
+    <ImageView
+        android:id="@+id/wisdom_chronicle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_chronicle_btn"
+        app:layout_constraintStart_toEndOf="@+id/chronicle_chronicle_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wisdom_b" />
+
+    <ImageView
+        android:id="@+id/profile_chronicle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wisdom_chronicle_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/chronicleicon"
+        android:layout_width="75dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chronicle_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ink" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

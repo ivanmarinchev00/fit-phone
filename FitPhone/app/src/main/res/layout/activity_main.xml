@@ -6,6 +6,108 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login"
+        android:layout_width="365dp"
+        android:layout_height="548dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/bg_menu"
+        android:elevation="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="36dp"
+            android:fontFamily="@font/cantarell"
+            android:gravity="center"
+            android:text="Hello!"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/challenge_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="280dp"
+            android:textColorHint="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helloInstruction">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantarell"
+                android:gravity="center"
+                android:hint="username"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/helloInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="300dp"
+            android:fontFamily="@font/cantarell"
+            android:gravity="center"
+            android:text="Tell us your name:"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/confirmName_btn"
+            android:layout_width="144dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="143dp"
+            android:layout_marginLeft="143dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="143dp"
+            android:layout_marginRight="143dp"
+            android:layout_marginBottom="205dp"
+            android:background="@drawable/rounded_corner_w"
+            android:fontFamily="@font/cantarell"
+            android:text="confirm"
+            android:onClick="handleClick"
+            android:textColor="#00B7EE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="326dp"
@@ -32,7 +134,7 @@
         app:srcCompat="@drawable/profile" />
 
     <TextView
-        android:id="@+id/username"
+        android:id="@+id/username_txt"
         android:layout_width="216dp"
         android:layout_height="45dp"
         android:layout_marginStart="20dp"
@@ -59,14 +161,14 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/wisdom_btn"
+        app:layout_constraintBottom_toTopOf="@+id/chronicle_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:srcCompat="@drawable/challenge_btn" />
 
     <ImageView
-        android:id="@+id/wisdom_btn"
+        android:id="@+id/chronicle_btn"
         android:layout_width="352dp"
         android:layout_height="92dp"
         android:layout_marginStart="5dp"
@@ -74,14 +176,14 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/chonicle_btn"
+        app:layout_constraintBottom_toTopOf="@+id/wisdom_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/challenge_btn"
-        app:srcCompat="@drawable/wisdom_btn" />
+        app:srcCompat="@drawable/chronicle_btn" />
 
     <ImageView
-        android:id="@+id/home_btn"
+        android:id="@+id/home_home_btn"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="10dp"
@@ -91,13 +193,13 @@
         android:layout_marginRight="5dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/challenge_bottom_btn"
+        app:layout_constraintEnd_toStartOf="@+id/challenge_home_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/house2" />
+        app:srcCompat="@drawable/house" />
 
     <ImageView
-        android:id="@+id/challenge_bottom_btn"
+        android:id="@+id/challenge_home_btn"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="5dp"
@@ -107,13 +209,13 @@
         android:layout_marginRight="5dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ink_bottom_btn"
-        app:layout_constraintStart_toEndOf="@+id/home_btn"
+        app:layout_constraintEnd_toStartOf="@+id/chronicle_home_btn"
+        app:layout_constraintStart_toEndOf="@+id/home_home_btn"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/swords" />
+        app:srcCompat="@drawable/swords_b" />
 
     <ImageView
-        android:id="@+id/wisdom_bottom_btn"
+        android:id="@+id/wisdom_home_btn"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="5dp"
@@ -123,13 +225,13 @@
         android:layout_marginRight="5dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/profile_bottom_btn"
-        app:layout_constraintStart_toEndOf="@+id/ink_bottom_btn"
+        app:layout_constraintEnd_toStartOf="@+id/profile_home_btn"
+        app:layout_constraintStart_toEndOf="@+id/chronicle_home_btn"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/wisdom" />
+        app:srcCompat="@drawable/wisdom_b" />
 
     <ImageView
-        android:id="@+id/profile_bottom_btn"
+        android:id="@+id/profile_home_btn"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="5dp"
@@ -140,7 +242,7 @@
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/wisdom_bottom_btn"
+        app:layout_constraintStart_toEndOf="@+id/wisdom_home_btn"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/user" />
 
@@ -156,11 +258,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/score_txt"
+        app:layout_constraintTop_toBottomOf="@+id/score_title"
         app:srcCompat="@drawable/score" />
 
     <TextView
-        android:id="@+id/score"
+        android:id="@+id/score_txt"
         android:layout_width="46dp"
         android:layout_height="55dp"
         android:layout_marginEnd="40dp"
@@ -175,7 +277,7 @@
         app:layout_constraintTop_toTopOf="@+id/scorebox" />
 
     <TextView
-        android:id="@+id/score_txt"
+        android:id="@+id/score_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
@@ -189,12 +291,12 @@
         app:layout_constraintBottom_toTopOf="@+id/scorebox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chonicle_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/wisdom_btn" />
 
     <TextView
         android:id="@+id/quote"
-        android:layout_width="181dp"
-        android:layout_height="109dp"
+        android:layout_width="179dp"
+        android:layout_height="116dp"
         android:layout_marginStart="18dp"
         android:layout_marginLeft="18dp"
         android:layout_marginEnd="40dp"
@@ -208,10 +310,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/scorebox"
-        app:layout_constraintTop_toBottomOf="@+id/chonicle_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/wisdom_btn" />
 
     <ImageView
-        android:id="@+id/chonicle_btn"
+        android:id="@+id/wisdom_btn"
         android:layout_width="352dp"
         android:layout_height="92dp"
         android:layout_marginStart="5dp"
@@ -220,14 +322,14 @@
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/score_txt"
+        app:layout_constraintBottom_toTopOf="@+id/score_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wisdom_btn"
-        app:srcCompat="@drawable/chronicle_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/chronicle_btn"
+        app:srcCompat="@drawable/wisdom_btn" />
 
     <ImageView
-        android:id="@+id/ink_bottom_btn"
+        android:id="@+id/chronicle_home_btn"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="5dp"
@@ -237,8 +339,8 @@
         android:layout_marginRight="5dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/wisdom_bottom_btn"
-        app:layout_constraintStart_toEndOf="@+id/challenge_bottom_btn"
+        app:layout_constraintEnd_toStartOf="@+id/wisdom_home_btn"
+        app:layout_constraintStart_toEndOf="@+id/challenge_home_btn"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ink" />
 
